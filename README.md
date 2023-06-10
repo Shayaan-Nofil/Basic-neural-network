@@ -1,2 +1,4 @@
 # Basic-neural-network
-A basic, incomplete implementation of a neural network for a university project.
+A C++ implementation of a basic neural network with complete front propogation, but incomplete back propogation. Incomplete back propogation in the sense that it does not check how accurate the answer is and in turn change the values of the weights, but rather just sends the output back to the input nodes layer by layer.
+
+The network is implemented using fork() commands for the layers, detached threads for the nodes, and named pipes (fifo) for the inter node communication.
